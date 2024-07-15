@@ -14,6 +14,7 @@
         border-collapse: collapse; /* tirar as bordas da tabela */
         /* separate = separa as bordas da tabela */
         /* collapse = serve para tirar as bordas da tabela */
+        position: relative; 
       }
 
       td , th {
@@ -33,17 +34,24 @@
         color: white;
       }
 
+      thead > tr > th { /* Usar posicionamento relativo na {table} - position: relative; */
+        position: sticky; /*  */
+        top: 0px; /* posicionar o cabeçalho na parte superior da tabela */
+        background-color: rgb(245, 7, 7);
+      }
+
       td.numero{
         text-align: right;
       }
 
-      tbody > tr:nth-child(2n+2) {
+      tbody > tr:nth-child(even) {
         /* :nth-child:() ; = estilizar elementos específicos de acordo com sua posição na ordem de exibição. */
         /* :nth-child(2n) = estilizar elementos de 2 em 2, comecando pelo elemento 0. */
         /* :nth-child(2n+1) = estilizar elementos de 2 em 2, comecando pelo elemento 1. */ 
         /* :nth-child(2n+2) = estilizar elementos de 2 em 2, comecando pelo elemento 2.*/
         /* :nth-child(:odd) => odd = impar e :nth-child(:even) => even = par.*/
-        background-color: rgb(192, 146, 146);
+        /* odd = 2n-1 / even = 2n */
+        background-color: rgb(154, 146, 192);
       } 
     </style>
   </head>
@@ -146,6 +154,38 @@
           <td>Mato Grosso</td>
           <td class="numero">2 195 988</td>
         </tr>
+        <tr>
+          <td>Piaú</td>
+          <td class="numero">3 183 134</td>
+        </tr>
+        <tr>
+          <td>Distrito Federal</td>
+          <td class="numero">2 305 189</td>
+        </tr>
+        <tr>
+          <td>Mato Grosso do Sul</td>
+          <td class="numero">2 283 919</td>
+        </tr>
+        <tr>
+          <td>Mato Grosso</td>
+          <td class="numero">2 195 988</td>
+        </tr>
+        <tr>
+          <td>Piaú</td>
+          <td class="numero">3 183 134</td>
+        </tr>
+        <tr>
+          <td>Distrito Federal</td>
+          <td class="numero">2 305 189</td>
+        </tr>
+        <tr>
+          <td>Mato Grosso do Sul</td>
+          <td class="numero">2 283 919</td>
+        </tr>
+        <tr>
+          <td>Mato Grosso</td>
+          <td class="numero">2 195 988</td>
+        </tr>
       </tbody>
       <tfoot>
         <!-- TABELA DE RODAPE -->
@@ -155,5 +195,11 @@
         </tr>
       </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quae optio aut quisquam vitae corporis sint quaerat deserunt, eum accusamus sunt pariatur unde sed quos praesentium reprehenderit labore eos cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque blanditiis ab in, dolor expedita repellendus sapiente sit cum repellat voluptatum, exercitationem dignissimos libero doloremque minima saepe nam ullam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis magnam laudantium hic perspiciatis soluta. Facilis alias distinctio vel deleniti eum ea perspiciatis adipisci voluptate! A repudiandae possimus ullam. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eligendi repudiandae velit vitae tenetur non commodi accusamus doloremque modi, qui porro sint excepturi, animi eaque dolorum mollitia dolores veritatis ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae nam, optio ullam qui, sapiente ut esse a harum possimus quae eum praesentium cum nobis iure sit molestias? Doloremque, libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quae optio aut quisquam vitae corporis sint quaerat deserunt, eum accusamus sunt pariatur unde sed quos praesentium reprehenderit labore eos cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque blanditiis ab in, dolor expedita repellendus sapiente sit cum repellat voluptatum, exercitationem dignissimos libero doloremque minima saepe nam ullam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis magnam laudantium hic perspiciatis soluta. Facilis alias distinctio vel deleniti eum ea perspiciatis adipisci voluptate! A repudiandae possimus ullam. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eligendi repudiandae velit vitae tenetur non commodi accusamus doloremque modi, qui porro sint excepturi, animi eaque dolorum mollitia dolores veritatis ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae nam, optio ullam qui, sapiente ut esse a harum possimus quae eum praesentium cum nobis iure sit molestias? Doloremque, libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quae optio aut quisquam vitae corporis sint quaerat deserunt, eum accusamus sunt pariatur unde sed quos praesentium reprehenderit labore eos cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque blanditiis ab in, dolor expedita repellendus sapiente sit cum repellat voluptatum, exercitationem dignissimos libero doloremque minima saepe nam ullam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis magnam laudantium hic perspiciatis soluta. Facilis alias distinctio vel deleniti eum ea perspiciatis adipisci voluptate! A repudiandae possimus ullam. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eligendi repudiandae velit vitae tenetur non commodi accusamus doloremque modi, qui porro sint excepturi, animi eaque dolorum mollitia dolores veritatis ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae nam, optio ullam qui, sapiente ut esse a harum possimus quae eum praesentium cum nobis iure sit molestias? Doloremque, libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quae optio aut quisquam vitae corporis sint quaerat deserunt, eum accusamus sunt pariatur unde sed quos praesentium reprehenderit labore eos cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque blanditiis ab in, dolor expedita repellendus sapiente sit cum repellat voluptatum, exercitationem dignissimos libero doloremque minima saepe nam ullam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis magnam laudantium hic perspiciatis soluta. Facilis alias distinctio vel deleniti eum ea perspiciatis adipisci voluptate! A repudiandae possimus ullam. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eligendi repudiandae velit vitae tenetur non commodi accusamus doloremque modi, qui porro sint excepturi, animi eaque dolorum mollitia dolores veritatis ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae nam, optio ullam qui, sapiente ut esse a harum possimus quae eum praesentium cum nobis iure sit molestias? Doloremque, libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quae optio aut quisquam vitae corporis sint quaerat deserunt, eum accusamus sunt pariatur unde sed quos praesentium reprehenderit labore eos cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque blanditiis ab in, dolor expedita repellendus sapiente sit cum repellat voluptatum, exercitationem dignissimos libero doloremque minima saepe nam ullam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis magnam laudantium hic perspiciatis soluta. Facilis alias distinctio vel deleniti eum ea perspiciatis adipisci voluptate! A repudiandae possimus ullam. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eligendi repudiandae velit vitae tenetur non commodi accusamus doloremque modi, qui porro sint excepturi, animi eaque dolorum mollitia dolores veritatis ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae nam, optio ullam qui, sapiente ut esse a harum possimus quae eum praesentium cum nobis iure sit molestias? Doloremque, libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quae optio aut quisquam vitae corporis sint quaerat deserunt, eum accusamus sunt pariatur unde sed quos praesentium reprehenderit labore eos cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque blanditiis ab in, dolor expedita repellendus sapiente sit cum repellat voluptatum, exercitationem dignissimos libero doloremque minima saepe nam ullam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis magnam laudantium hic perspiciatis soluta. Facilis alias distinctio vel deleniti eum ea perspiciatis adipisci voluptate! A repudiandae possimus ullam. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eligendi repudiandae velit vitae tenetur non commodi accusamus doloremque modi, qui porro sint excepturi, animi eaque dolorum mollitia dolores veritatis ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint molestiae nam, optio ullam qui, sapiente ut esse a harum possimus quae eum praesentium cum nobis iure sit molestias? Doloremque, libero.</p>
   </body>
 </html>

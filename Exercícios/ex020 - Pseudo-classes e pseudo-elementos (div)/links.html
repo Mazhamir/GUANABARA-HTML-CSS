@@ -17,33 +17,33 @@
       font-weight: bold;
     }
 
-    a:visited{
+    a:visited{ /* se o link tiver sido visitado a cor vai mudar para azul */
       color: blue;
     }
 
-    a:hover{
+    a:hover{ /* quando passar o mouse por cima a cor vai mudar para preto */
       text-decoration: underline;
       color: rgb(0, 0, 0);
     }
 
     
-    a:active{
+    a:active{ /* Ao clicar a cor vai mudar para amarelo */
       color: yellow;
     }
     
-    .especial::before {
+    .especial::before { /* antes do texto */
       content: ' 😎';
+    }
+    .especial::after { /* depois do texto */
+      content: ' [link]';
+      text-decoration: none;
+      font-weight: normal;
+      color: darkgreen;
     }
     
     .especial{
       background-color: purple;
       color: white;
-    }
-    .especial::after {
-      content: ' [link]';
-      text-decoration: none;
-      font-weight: normal;
-      color: darkgreen;
     }
     
     </style>
