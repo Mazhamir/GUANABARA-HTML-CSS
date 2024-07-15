@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes Externas</title>
+  <style>
+    @font-face { /*  é usada para definir fontes personalizadas */
+      font-family: 'Old London'; /* Nome opcional */
+      src: url('fontes/OldLondon.ttf') format('truetype') , url('fontes/OldLondonAlternate.ttf') format('truetype') , url('fontes/Olondon_.otf') format('opentype') , url('fontes/Olondona.otf') format('opentype');
+      /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        -sgv
+      */
+      font-weight: normal;/* Vale a pena incluir para assegurar o melhor funcionamento da fonte */
+      font-style: normal;/* Vale a pena incluir para assegurar o melhor funcionamento da fonte */
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    h1{
+      font-family:'Old London', Times, serif;
+      font-size: 3em;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <h1>Otton Mazhamir Cenci</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci ducimus odit, vero eligendi provident repellendus id reiciendis tenetur at consequatur iusto quisquam, animi veritatis laborum inventore ea cum placeat?</p>
+</body>
+</html>

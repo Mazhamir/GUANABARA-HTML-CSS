@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/pirate_GIMP_100X100_FAVICON_.png" type="image/x-icon">
+  <title>links</title>
+  <style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:visited{
+      color: blue;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      color: rgb(0, 0, 0);
+    }
+
+    
+    a:active{
+      color: yellow;
+    }
+    
+    .especial::before {
+      content: ' 😎';
+    }
+    
+    .especial{
+      background-color: purple;
+      color: white;
+    }
+    .especial::after {
+      content: ' [link]';
+      text-decoration: none;
+      font-weight: normal;
+      color: darkgreen;
+    }
+    
+    </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    
+      <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf">Repositório GitHub</a></li>
+    
+      <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="especial">Canal do Youtube</a></li>
+    
+      <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=23&ab_channel=CursoemV%C3%ADdeo">Sites do curso em Vídeo</a></li>
+    </a>
+  </ul>
+  <h1>Pseudo-classes ( Definem elementos )</h1>
+  <p>
+    <strong>:hover:</strong> Aplica estilo quando o usuário passa o mouse sobre o <br>
+
+<strong>: visited:</strong> Aplica estilo a links que já foram visitados.<br>
+
+<strong>: active:</strong> Aplica estilo ao elemento no momento em que ele está sendo clicado.<br>
+
+<strong>: checked:</strong> Aplica estilo a elementos de formulário (como checkboxes ou radio buttons) que estão marcados.<br>
+
+<strong>: empty:</strong> Aplica estilo a elementos que não têm filhos (nem elementos nem texto).<br>
+
+<strong>:focus:</strong> Aplica estilo ao elemento quando ele recebe foco, como ao clicar em um campo de formulário.
+
+  </p>
+  <h1>Pseudo-elementos ( Definem conteúdos )</h1>
+
+. <strong>:: before</strong>': Insere conteudo antes do elemento selecionado. <br>
+
+· <strong>:: after</strong>`: Insere conteúdo após o elemento selecionado.<br>
+
+. <strong>:: first-letter</strong>': Aplica estilo ao primeiro caractere do texto.<br>
+
+. <strong>:: first-line</strong>`: Aplica estilo à primeira linha do texto.
+
+  <!-- SELETORES PERSONALIZADOS
+  # = id
+  . = class 
+  : = pseudo-class
+  :: = pseudo-element
+  > = children
+  -->
+  <h2>SELETORES PERSONALIZADOS</h2>
+  <p># = id</p>
+  <p>. = class</p> 
+  <p>: = pseudo-class</p>
+  <p>:: = pseudo-element</p>
+  <p>> = children</p>
+  
+  <img src="/image.png" alt="">
+  <img src="/Captura de tela 2024-06-26 105830.png" alt="">
+</body>
+</html>

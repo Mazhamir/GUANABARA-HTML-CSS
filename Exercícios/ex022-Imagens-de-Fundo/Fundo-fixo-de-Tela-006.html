@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundo fixo de Tela</title>
+    <style>
+      body {
+        height: 100vh; /* altura da view port (height)  em relação ao tamanho da janela de visualização (viewport)*/
+        background-color: black;
+        background-image: url("/Exercícios/ex022-Imagens-de-Fundo/imagens/wallpaper002.jpg");
+        background-position: center center; /* (left|center|right) (top|center|bottom) */
+        background-repeat: no-repeat; /* repeat, repeat-x, repeat-y, no-repeat */
+        background-attachment: fixed; /* fixa a imagem de fundo ao fundo da tela */
+        background-size: cover; /* a imagem será esticada ou reduzida para cobrir completamente a área de fundo, mantendo sua proporção. */
+        
+        /* shorthand - background: color > image > position > repeat >  attachment; */
+      }
+      /* 
+      Mudando o tamanho da imagem de fundo do site 
+
+      background-size: 100% 100%; -> preenche a tela, mas achata e distorce a imagem
+
+      background-size: countain;-> imagem será dimensionada para caber completamente dentro da área do elemento, mantendo sua proporção, e pode resultar em espaços em branco ao redor da imagem se a proporção da imagem não corresponder à proporção do elemento pai.
+
+      background-size: cover;-> a imagem será esticada ou reduzida para cobrir completamente a área de fundo, mantendo sua proporção.
+
+      background-size: auto;-> imagem de fundo será exibida na sua dimensão original, sem ser esticada ou reduzida.
+
+      */
+
+      main {
+        background-color: white;
+        max-width: 400px; /* largura máxima de 400px*/
+        padding: 10px;
+        margin: auto;
+        border: 1px solid blue; /* 1px = espessura da borda, blue = cor da borda */
+        border-radius: 15px; /* arredondamento da borda */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Teste de imagem de Fundo</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        ratione repellendus iusto, hic tempora sequi enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.
+        enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.enim aliquid quam sit
+        dolore quis alias sapiente libero, adipisci, laudantium debitis. Optio,
+        similique cupiditate? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Minima magnam a eligendi ipsum rerum officia
+        cupiditate? Corporis sint similique nemo facere quod, doloremque dolore
+        magni itaque, ipsam inventore quaerat atque.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Hover</title>
+  <style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div > p { /* Só vai mexer no parágrafo que é da DIV */
+      display: none; /* Vai deixar oculto a tag P dentro da DIV */
+    }
+
+    div:hover > p { /* Só vai mexer no parágrafo que é da DIV */
+      display: block; /* Vai mostrar a tag P  quando passar o mouse */
+      color: red;
+      background-color: blue;
+      width: 300px;
+    }
+
+    div:hover{
+      color: yellow;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Exemplo de hover</h1>
+
+  <p>Passe o mouse sobre o texto abaixo</p>
+
+  <div>Passe o mouse aqui
+    <p>TEXTO ESCONDIDO....</p>
+  </div>
+  <p>Fim do exemplo</p>
+  <img src="./image.png" alt="">
+  <img src="./Captura de tela 2024-06-26 105830.png" alt="">
+  <h1>Pseudo-classes</h1>
+  <p>
+    <strong>:hover:</strong> Aplica estilo quando o usuário passa o mouse sobre o <br>
+
+<strong>:visited:</strong> Aplica estilo a links que já foram visitados.<br>
+
+<strong>:active:</strong> Aplica estilo ao elemento no momento em que ele está sendo clicado.<br>
+
+<strong>:checked:</strong> Aplica estilo a elementos de formulário (como checkboxes ou radio buttons) que estão marcados.<br>
+
+<strong>:empty:</strong> Aplica estilo a elementos que não têm filhos (nem elementos nem texto).<br>
+
+<strong>:focus:</strong> Aplica estilo ao elemento quando ele recebe foco, como ao clicar em um campo de formulário.
+
+  </p>
+</body>
+</html>

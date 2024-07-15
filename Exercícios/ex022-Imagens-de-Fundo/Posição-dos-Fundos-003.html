@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posição dos Fundos</title>
+    <style>
+      div.bloco {
+        background-image: url('/Exercícios/ex022-Imagens-de-Fundo/imagens/wallpaper003.jpg');
+        height: 200px;
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        margin: 10px;
+      }
+
+      div#q1 {
+        background-position: left top; 
+        /* (left|center|right) (top|center|bottom) */ 
+        /* Vai definir a posição do fundo */
+      }
+      div#q2 {
+        background-position: left center;  
+      }
+
+      div#q3 {
+        background-position: right bottom;
+      }
+
+      div#q4 {
+        background-position: center center;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bloco" id="q1"></div>
+
+    <div class="bloco" id="q2"></div>
+
+    <div class="bloco" id="q3"></div>
+
+    <div class="bloco" id="q4"></div>
+
+    <img src="/Exercícios/ex022-Imagens-de-Fundo/imagens/image.png" alt="">
+
+  </body>
+</html>

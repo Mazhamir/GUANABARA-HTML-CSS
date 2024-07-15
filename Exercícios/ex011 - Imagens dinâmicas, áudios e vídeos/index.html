@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+  <link rel="shortcut icon" href="/imagens/pirate_GIMP_100X100_FAVICON_.png" type="image/x-icon">
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositívos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+  <picture>
+    <source media="(max-width: 750px)" srcset="./imagens/foto-p-300x300-png.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="./imagens/foto-m-700x700-png.png" type="image/png">
+    <img src="./imagens/foto-g-1000x1000-png.png" alt="A Imagem flexível ">
+  </picture>
+
+  <h1>Reprodução de Áudio.</h1>
+  <p>vamos aprender a reproduzir áudio em HTML5.</p>
+  <audio preload="auto" controls>
+    <source src="/midia/Headlands - National Sweetheart.mp3" type="audio/mp3">
+  </audio>
+
+</body>
+</html>

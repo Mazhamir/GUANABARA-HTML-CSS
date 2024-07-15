@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./pirate_GIMP_100X100_FAVICON_.png" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      table {
+        width: 300px;
+        height: 300px;
+        border-collapse: separate; 
+        /* separate = separa as bordas da tabela */
+        /* collapse = serve para tirar as bordas da tabela */
+        border-spacing: 10px; /* 10px = espacamento entre as bordas de cada tabela */
+        border: 5px solid rgb(255, 0, 170);
+        margin: 10px;
+      }
+
+      td { 
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center; /* Alinhamento horizontal */ /* left(padrao), center, right */
+      }
+
+      tr.Tabela-1-Linha-2{ /* TABLE ROW - Geral */
+        background-color: rgb(56, 14, 209);
+      }
+
+      td.Tabela-2-Linha-3-Dado-B3{
+        background-color: yellow;
+        vertical-align: top; /* Alinhamento vertical */ /* top, middle(padrao), bottom */
+        color: rgb(255, 0, 0);
+      }
+
+      .numero {
+        text-align: right;
+      }
+
+      img {
+        margin-top: 40px;
+        width: 300px;
+      }
+
+      div{
+        margin: 20px;
+        padding: 10px;
+        background-color: rgb(0, 255, 255);
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HIERARQUIA DE TABELAS (simples)
+    TABLE = TABELA
+        TABLE ROW = LINHA DE TABELA
+          TABLE HEADER = CABECALHO DE TABELA
+            TABLE DATA = DADO DE TABELA
+-->
+    <h1>Minha primeira tabela</h1>
+
+    <table id="tabela-1"> <!-- TABELA -->
+      <tr> <!-- TABLE ROW -->
+        <td>A1</td> <!-- TABLE DATA --> <!-- Primeira linha -->
+        <td>B1</td>
+        <td>C1</td>
+      </tr>
+      <tr class="Tabela-1-Linha-2"> <!-- Segunda linha -->
+        <td>A2</td>
+        <td>B2</td>
+        <td class="numero">C2</td>
+      </tr>
+      <tr> <!-- Terceira linha -->
+        <td>A3</td>
+        <td>B3</td>
+        <td class="numero">C3</td>
+      </tr>
+    </table>
+
+    <table id="tabela-2"> <!-- TABELA -->
+      <tr> <!-- TABLE ROW --> <!-- Primeira linha -->
+        <td>A1</td> <!-- TABLE DATA --> 
+        <td>B1</td>
+        <td>C1</td>
+      </tr>
+      <tr> <!-- Segunda linha -->
+        <td>A2</td>
+        <td>B2</td>
+        <td>C2</td>
+      </tr>
+      <tr> <!-- Terceira linha -->
+        <td>A3</td>
+        <td class="Tabela-2-Linha-3-Dado-B3">B3</td>
+        <td>C3</td>
+      </tr>
+    </table>
+    <div>
+      <img src="./WhatsApp Image 2024-07-09 at 14.52.51.jpeg" alt="" />
+      <img src="./image.png" alt="">
+    </div>
+  </body>
+</html>

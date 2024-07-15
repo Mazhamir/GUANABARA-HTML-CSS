@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*  @ => signigica adicionar uma regra */
+
+body {
+  background-color:rgb(141, 141, 187);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1{
+  color: blue;
+  background-color:blueviolet;
+}
+
+h2{
+  color: rgb(255, 0, 0);
+}
+
