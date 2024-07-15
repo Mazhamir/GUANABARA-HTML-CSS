@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesclagem de Células</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+      width: 300px;
+      height: 300px;
+      border-collapse: collapse;
+      /* separate = separa as bordas da tabela */
+      /* collapse = as bordas das células são unidas */ 
+      margin-bottom: 50px;
+    }
+    td{
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mesclagem de Células</h1>
+  <table> 
+    
+    <tr>
+      <td>A</td>
+      <td colspan="2">B</td> <!-- colspan = Coluna -(Horizontal) O atributo colspan é adicionado a uma célula <td> ou <th> e seu valor é um número inteiro que representa quantas colunas a célula deve ocupar. -->
+    </tr>
+
+    <tr>
+      <td>D</td>
+      <td>E</td>
+      <td rowspan="3">F</td> <!-- rowspan = Linha -(Vertical) O atributo rowspan é adicionado a uma celula <td> ou <th> e seu valor é um número inteiro que representa quantas linhas a celula deve ocupar. -->
+    </tr>
+
+    <tr>
+
+      <td>H</td>
+      <td>I</td>
+    </tr>
+
+    <tr>
+
+      <td>K</td>
+      <td>L</td>
+    </tr>
+  </table>
+  <img src="./image.png" alt="">
+</body>
+</html>

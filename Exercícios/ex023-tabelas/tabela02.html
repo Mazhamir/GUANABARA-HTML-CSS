@@ -12,8 +12,8 @@
       table {
         width: 500px;
         border-collapse: collapse; /* tirar as bordas da tabela */
-        /* separate = separa as bordas da tabela */
-        /* collapse = serve para tirar as bordas da tabela */
+        /* separate = separa as bordas da tabela - com bordas */
+        /* collapse = serve para tirar as bordas da tabela - sem bordas */
         position: relative; 
       }
 
@@ -23,8 +23,8 @@
       }
 
       caption { 
-        font-size: 1.5em;
-        font-weight: bolder;
+        font-size: 1.5em; 
+        font-weight: bolder; /* */
         padding: 10px;
         background-color: rgb(192, 146, 146);
       }
@@ -35,13 +35,13 @@
       }
 
       thead > tr > th { /* Usar posicionamento relativo na {table} - position: relative; */
-        position: sticky; /*  */
+        position: sticky; /* */
         top: 0px; /* posicionar o cabeçalho na parte superior da tabela */
         background-color: rgb(245, 7, 7);
       }
 
       td.numero{
-        text-align: right;
+        text-align: right; 
       }
 
       tbody > tr:nth-child(even) {
@@ -81,7 +81,7 @@
         <!-- TABELA DE CABECALHO-->
         <tr>
           <th scope="col">Estado</th> <!-- scope="col" = coluna , O título faz referência a coluna abaixo dele  -->
-          <th scope="col" style="width: 100px;">Popolação</th> <!-- scope="col" = coluna , O título faz referência a coluna abaixo dele  -->
+          <th scope="col" style="width: 100px;">População</th> <!-- scope="col" = coluna , O título faz referência a coluna abaixo dele  -->
         </tr>
       </thead>
       <tbody>

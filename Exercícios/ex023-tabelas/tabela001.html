@@ -11,23 +11,20 @@
         font-family: Arial, Helvetica, sans-serif;
       }
 
-      *{
-        margin: 0px;
-        padding: 0px;
-      }
-
       table {
         width: 300px;
         height: 300px;
         border-collapse: separate; 
         /* separate = separa as bordas da tabela */
-        /* collapse = serve para tirar as bordas da tabela */
-        border-spacing: 10px; /* 10px = espacamento entre as bordas de cada tabela */
+        /* collapse = as bordas das células são unidas */
+        border-spacing: 10px; /* 10px = espacamento entre as bordas de cada tabela */ 
         border: 5px solid rgb(255, 0, 170);
         margin: 10px;
+        font-size:  18px;
+        font-style: italic;
       }
 
-      td { 
+      td{ 
         border: 1px solid black;
         padding: 8px;
         text-align: center; /* Alinhamento horizontal */ /* left(padrao), center, right */
@@ -35,6 +32,7 @@
 
       tr.Tabela-1-Linha-2{ /* TABLE ROW - Geral */
         background-color: rgb(56, 14, 209);
+        color: white;
       }
 
       td.Tabela-2-Linha-3-Dado-B3{
@@ -44,7 +42,7 @@
       }
 
       .numero {
-        text-align: right;
+        text-align: right; /* Alinhamento horizontal - left, center, right */
       }
 
       img {
