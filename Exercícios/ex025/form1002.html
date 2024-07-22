@@ -6,27 +6,40 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Meu primeiro formulário</h1>
-  <form action="cadastro.php" autocomplete="off" method="post">
+  <h1>Teste de formulário</h1>
+  <form action="cadastro.php" method="get">
+    <p>
+      <label for="iusu">Usuário:</label>
+      <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+    </p>
+    
+    <p>
+      <label for="isen">Senha:</label>
+      <input type="password" name="sen" id="isen">
+    </p>
 
-    <p><label for="inome">Nome:</label> 
-      <input type="text" name="nome" id="inome">
-
-    <p><label for="isobrenome">Sobrenome:</label> 
-      <input type="text" name="sobrenome" id="isobrenome"></p>
-    <p><input type="submit"></p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
 
   </form>
-  
-  <!--<input> elemento pode ser exibido de várias maneiras, dependendo do type="" atributo.-->
+  <!--<input>-->
+  <!--<input> elemento pode ser exibido de várias maneiras, dependendo do type="" atributo.
+  required minlength="5" (mínimo de letras) maxlength="15" (máximo de letras)>
+  -->
+
   <!--<label> tag define um rótulo para muitos elementos do formulário.-->
   
     <!--<input> + <label>-->
   <!--name="" é mais util para o HTML/PHP back-and-->
   <!--id="" é mais util para JavaScript/CSS/LABEL-->
+  <!--id + for-->
   <!-- id => esta interligado com o for=" " (o "i" faz essa representação)
   O for="" atributo da <label>tag deve ser igual ao id="" atributo do <input> elemento para ligá-los.
   (Tudo isso para fazer relação com o <label> a seu <input> )-->
+  <!--type="" + value=""-->
+  <!--type="submit" value="Enviar" - value vai escrever dentro do type especificado.-->
   
     <!--<form>-->
   <!--action="cadastro.php" - atributo define a ação a ser executada quando o formulário é enviado. -->
@@ -36,6 +49,5 @@
   <!--method=" " atributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
   "GET":Acrescenta os dados do formulário à URL, em pares nome/valor
   "POST":Acrescenta os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são exibidos na URL)-->
-
 </body>
 </html>
