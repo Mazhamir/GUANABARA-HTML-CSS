@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Teste de Formulário</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+  <p>
+    <label for="inome">Nome:</label>
+    <input type="text" name="nome" id="inome" required minlength="8" maxlength="30" placeholder="Nome completo" autocomplete="name">
+    <!--OBS: type="text" required minlength="8" maxlength="30" -->
+  </p>
+  <p>
+    <label for="imedia">Média:</label>
+    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+    <!--OBS: type="number" min="0" max="10" -->
+    <!--step="0.5" indica que o valor do campo <input> pode ser aumentado ou diminuído em incrementos de 0.5.-->
+  </p>
+  <p>
+    <label for="imes">Período letivo:</label>
+    <input type="month" name="mes" id="imes" value="2020-07">
+    <!--OBS: value="2020-07" foi especificado de trás pra frente -->
+  </p>
+  <p>
+    <label for="idia">Dia da prova:</label>
+    <input type="date" name="dia" id="Idia" value="2020-07-14">
+    <!--OBS: value="2020-07-14" foi especificado de trás pra frente-->
+  </p>
+  <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    <!--OBS: value=" " vai escrever dentro do type="" especificado e torna aquela especificação padrão.-->
+  </p>
+  <p>
+    <label for="ihora">Horário da prova:</label>
+    <input type="time" name="tempo" id="ihora">
+  </p>
+</form>
+</body>
+</html>
