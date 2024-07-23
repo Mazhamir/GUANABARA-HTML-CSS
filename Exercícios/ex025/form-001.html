@@ -9,26 +9,39 @@
   <h1>Meu primeiro formulário</h1>
   <form action="cadastro.php" autocomplete="off" method="post">
 
-    <p><label for="inome">Nome:</label> 
-      <input type="text" name="nome" id="inome">
+      <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome">
+      </p>
 
-    <p><label for="isobrenome">Sobrenome:</label> 
-      <input type="text" name="sobrenome" id="isobrenome" ></p>
-    <p><input type="submit"></p>
+
+      <p>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome" >
+        <input type="submit">
+      </p>
 
   </form>
-  
+        <!--<input>-->
   <!--<input> elemento pode ser exibido de várias maneiras, dependendo do type="" atributo.-->
-  <!--<label> tag define um rótulo para muitos elementos do formulário.-->
+  <!--required( torna um campo obrigatório) minlength="5" (mínimo de letras) maxlength="15" (máximo de letras)-->
+  <!--size=" " atributo para especificar o número de valores visíveis -->
+  <!--placeholder=" " Você especifica a dica-->
+    <!--type="" + value=""-->
+  <!--type="submit" value="Enviar" - value vai escrever dentro do type especificado.-->
+  <!--autocomplete=" " habilitar ou não  o recurso de preenchimento tendo vários tipos, direfente do form que só tem dois tipos.
   
-    <!--<input> + <label>-->
+      <!- <label> tag define um rótulo para muitos elementos do formulário.-->
+  
+      <!--<input> + <label>-->
   <!--name="" é mais util para o HTML/PHP back-and-->
   <!--id="" é mais util para JavaScript/CSS/LABEL-->
+    <!--id + for-->
   <!-- id => esta interligado com o for=" " (o "i" faz essa representação)
   O for="" atributo da <label>tag deve ser igual ao id="" atributo do <input> elemento para ligá-los.
   (Tudo isso para fazer relação com o <label> a seu <input> )-->
   
-    <!--<form>-->
+      <!--<form>-->
   <!--action="cadastro.php" - atributo define a ação a ser executada quando o formulário é enviado. -->
   <!--autocomplete=" " habilitar ou não  o recurso de preenchimento automático de formulários.
   "on": Permite que o navegador preencha automaticamente.
@@ -36,6 +49,5 @@
   <!--method=" " atributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
   "GET":Acrescenta os dados do formulário à URL, em pares nome/valor
   "POST":Acrescenta os dados do formulário dentro do corpo da solicitação HTTP (os dados do formulário enviado não são exibidos na URL)-->
-
 </body>
 </html>
