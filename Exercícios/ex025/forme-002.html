@@ -7,15 +7,15 @@
 </head>
 <body>
   <h1>Teste de formulário</h1>
-  <form action="cadastro.php" method="get">
+  <form action="cadastro.php" method="post" autocomplete="off">
     <p>
       <label for="iusu">Usuário:</label>
-      <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+      <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do usuário" autocomplete="username">
     </p>
     
     <p>
       <label for="isen">Senha:</label>
-      <input type="password" name="sen" id="isen">
+      <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" size="8" placeholder="Mínimo 8 letras" autocomplete="new-password">
     </p>
 
     <p>
@@ -24,23 +24,28 @@
     </p>
 
   </form>
-  <!--<input>-->
+      <!--<input>-->
   <!--<input> elemento pode ser exibido de várias maneiras, dependendo do type="" atributo.-->
-  <!--required minlength="5" (mínimo de letras) maxlength="15" (máximo de letras)-->
+  <!--required(obrigatório) minlength="5" (mínimo de letras) maxlength="15" (máximo de letras)-->
+  <!--size=" " atributo para especificar o número de valores visíveis -->
+  <!--placeholder=" " Você especifica a dica-->
+    <!--type="" + value=""-->
+  <!--type="submit" value="Enviar" - value vai escrever dentro do type especificado.-->
   
-  <!--<label> tag define um rótulo para muitos elementos do formulário.-->
+      <!--<label> tag define um rótulo para muitos elementos do formulário.-->
   
-    <!--<input> + <label>-->
+      <!--<input> + <label>-->
   <!--name="" é mais util para o HTML/PHP back-and-->
   <!--id="" é mais util para JavaScript/CSS/LABEL-->
-  <!--id + for-->
+    <!--id + for-->
   <!-- id => esta interligado com o for=" " (o "i" faz essa representação)
   O for="" atributo da <label>tag deve ser igual ao id="" atributo do <input> elemento para ligá-los.
   (Tudo isso para fazer relação com o <label> a seu <input> )-->
-  <!--type="" + value=""-->
-  <!--type="submit" value="Enviar" - value vai escrever dentro do type especificado.-->
   
-    <!--<form>-->
+  
+  
+  
+      <!--<form>-->
   <!--action="cadastro.php" - atributo define a ação a ser executada quando o formulário é enviado. -->
   <!--autocomplete=" " habilitar ou não  o recurso de preenchimento automático de formulários.
   "on": Permite que o navegador preencha automaticamente.
