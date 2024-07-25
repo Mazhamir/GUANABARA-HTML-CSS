@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+  <form action="" method="post" autocomplete="on">
+    <p>
+      <!--Label elemento-->
+      <label for="iest">Estado</label>
+      <!-- <select> elemento define uma lista suspensa: -->
+      <select name="estado" id="iest">
+        <!--Para definir uma opção pré-selecionada, adicione o SELECTED atributo à opção:-->
+        <option value=""selected>--- Escolha ---</option> <!-- Grupo de opniões -->
+        <optgroup label="Região Sudeste"> <!-- Lebal atributo -->
+          <option value="MG">Minas Gerais</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SP">São Paulo</option>
+          
+        </optgroup> <!-- Grupo de opniões -->
+        <optgroup label="Região Nordeste">
+          <option value="MA">Maranhão</option>
+          <option value="PE">Pernanbuco</option>
+          <option value="RN">Rio Grande no Norte</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <label for="iprof">Profissão: </label>
+      <input type="text" name="prof" id="iprof" list="lstprof">
+      <datalist id="lstprof"> <!-- Fornecer uma lista de opções predefinidas -->
+        <option value="ADM">Administrador</option>
+        <option value="CONT">Contabilidade</option>
+        <option value="DEV">Desenvolvedor</option>
+        <option value="PROF">Professor</option>
+      </datalist>
+      <!--list="lstprof" + id="lstprof" Fez a conexão com (datalist + option) -->
+    </p>
+    <p>
+      <label for="imsg">Mensagem: </label> <br>
+      <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+      <!--cols="" colunas
+      rows="" linhas 
+      <textarea> criar uma área de texto onde os usuários podem digitar múltiplas linhas de texto
+      -->
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
