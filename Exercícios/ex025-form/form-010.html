@@ -14,14 +14,15 @@
     <p>
       <label for="iidade">Sua idade é: </label>
       <output id="iidade">0</output>
-      
+      <!-- Você pode usar JavaScript para atualizar dinamicamente o valor do <output> + oninput=" " -->
+      <!-- <output> defini um valor por padrão -->
     </p>
     <p>
       <input type="submit" value="Enviar"/>
       <input type="reset" value="Limpar"/>
     </p>
   </form>
-  <script>
+  <script> /* código em JavaScript */
     function calcIdade() {
       let atual = new Date().getFullYear()
       iidade.innerHTML = Number(atual) - Number(iano.value)
